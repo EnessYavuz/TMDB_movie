@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 
 function ResultCart({ movies }) {
-  const { addWatchedMovie } = useContext(GlobalContext);
+  const { addWatchedMovie,addWatchListMovie } = useContext(GlobalContext);
 
   const handleClick = (movie) => {
     addWatchedMovie(movie);
@@ -18,7 +18,7 @@ function ResultCart({ movies }) {
           />
           <div className="cardContainer">
             <h5 row={3}>{movies.title}</h5>
-            <button className="btn">addlist</button>
+            <button className="btn" onClick={()=>addWatchListMovie(movies)}>addlist</button>
             <button className="btn" onClick={() => handleClick(movies)}>
               addWatched
             </button>

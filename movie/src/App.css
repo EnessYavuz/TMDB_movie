@@ -181,6 +181,17 @@ header .nav-links li:last-child {
   justify-content: center;
   align-items: center;
 }
+.resultss {
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
 
 .results li {
   list-style: none;
@@ -247,3 +258,7 @@ header .nav-links li:last-child {
 .cardContainer{
   padding: 2px 16px;
 }
+li {
+  list-style: none;
+}
+
