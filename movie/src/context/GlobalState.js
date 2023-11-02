@@ -8,6 +8,7 @@ function GlobalState(props) {
   
   const addWatchedMovie = (movie) => {
     setWatchedMovie((movies) => [...movies, movie]);
+    deleteWatchList(movie.id)
   };
   const addWatchListMovie = (movie) => {
     setWatchListMovie((movies) => [...movies, movie]);
